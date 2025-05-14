@@ -28,8 +28,12 @@ public class ModItems {
     public static final ItemEntry<Item> QUARTZ_GEAR = item("nether_quartz_gear").register();
     public static final ItemEntry<Item> REDSTONE_PLATE = item("redstone_plate").register();
     public static final ItemEntry<Item> REDSTONE_GEAR = item("redstone_gear").register();
-
-    public static final ItemEntry<Item> COPPER_ROD = item("copper_rod").register();
+    public static final ItemEntry<Item> AMETHYST_PLATE = item("amethyst_plate").register();
+    public static final ItemEntry<Item> AMETHYST_GEAR = item("amethyst_gear").register();
+    public static final ItemEntry<Item> NETHERITE_PLATE = item("netherite_plate").register();
+    public static final ItemEntry<Item> NETHERITE_GEAR = item("netherite_gear").register();
+    public static final ItemEntry<Item> STAR_PLATE = item("nether_star_plate").register();
+    public static final ItemEntry<Item> STAR_GEAR = item("nether_star_gear").register();
 
 
     private static ItemBuilder<Item, Registrate> item(String name) {
