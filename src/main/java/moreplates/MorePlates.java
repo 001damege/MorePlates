@@ -41,6 +41,9 @@ public class MorePlates {
         if (ModList.get().isLoaded(Addons.EIO.getModId())) {
             EnderIOAddon.register();
         }
+        if (ModList.get().isLoaded(Addons.ProE.getModId())) {
+            ProjectEAddon.register();
+        }
     }
 
     public static ResourceLocation rl(String path) {

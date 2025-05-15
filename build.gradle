@@ -76,6 +76,8 @@ dependencies {
 
     implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
     jarJar(group: 'com.tterrag.registrate', name: 'Registrate', version: "${registrate_version_range}")
+
+    implementation fg.deobf("curse.maven:projecte-226410:4901949") // ProjectE 1.20.1-PE1.0.1
 }
 
 jarJar.enable()
