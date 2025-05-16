@@ -32,6 +32,9 @@ public class MorePlates {
         if (ModList.get().isLoaded(Addons.AE2.getModId())) {
             AppliedEnergistics2Addon.register();
         }
+        if (ModList.get().isLoaded(Addons.Botania.getModId())) {
+            BotaniaAddon.register();
+        }
     }
 
     public static ResourceLocation rl(String path) {
