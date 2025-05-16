@@ -7,10 +7,8 @@ import moreplates.registries.ModItems;
 import moreplates.util.Addons;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.util.Lazy;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(MorePlates.MODID)
 public class MorePlates {
@@ -18,8 +16,6 @@ public class MorePlates {
     private static final Lazy<Registrate> REGISTRATE = Lazy.of(() -> Registrate.create(MODID));
 
     public MorePlates() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
         ModGroups.register();
         ModItems.register();
 
@@ -34,6 +30,9 @@ public class MorePlates {
         }
         if (ModList.get().isLoaded(Addons.Botania.getModId())) {
             BotaniaAddon.register();
+        }
+        if (ModList.get().isLoaded(Addons.Mekanism.getModId())) {
+            MekanismAddon.register();
         }
     }
 
