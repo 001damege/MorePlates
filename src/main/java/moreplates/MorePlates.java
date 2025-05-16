@@ -23,26 +23,11 @@ public class MorePlates {
         ModGroups.register();
         ModItems.register();
 
-        if (ModList.get().isLoaded(Addons.Mekanism.getModId())) {
-            MekanismAddon.register();
-        }
-        if (ModList.get().isLoaded(Addons.DE.getModId())) {
-            DraconicEvolutionAddon.register();
-        }
-        if (ModList.get().isLoaded(Addons.AE2.getModId())) {
-            AppliedEnergistics2Addon.register();
-        }
         if (ModList.get().isLoaded(Addons.Avaritia.getModId())) {
             AvaritiaAddon.register();
         }
-        if (ModList.get().isLoaded(Addons.Botania.getModId())) {
-            BotaniaAddon.register();
-        }
-        if (ModList.get().isLoaded(Addons.EIO.getModId())) {
-            EnderIOAddon.register();
-        }
-        if (ModList.get().isLoaded(Addons.ProE.getModId())) {
-            ProjectEAddon.register();
+        if (ModList.get().isLoaded(Addons.Actually.getModId())) {
+            ActuallyAdditionsAddon.register();
         }
     }
 
