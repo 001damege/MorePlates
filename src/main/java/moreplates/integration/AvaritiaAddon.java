@@ -14,13 +14,9 @@ public class AvaritiaAddon {
     private static final Registrate REGISTRATE = MorePlates.registrate();
 
     public static final ItemEntry<Item> CRYSTAL_MATRIX_PLATE = crystal("crystal_matrix_plate").register();
-    public static final ItemEntry<Item> CRYSTAL_MATRIX_GEAR = crystal("crystal_matrix_gear").register();
     public static final ItemEntry<Item> NEUTRON_PLATE = neutron("neutron_plate").register();
-    public static final ItemEntry<Item> NEUTRON_GEAR = neutron("neutron_gear").register();
     public static final ItemEntry<Item> BLAZE_PLATE = blaze("blaze_plate").register();
-    public static final ItemEntry<Item> BLAZE_GEAR = blaze("blaze_gear").register();
     public static final ItemEntry<Item> INFINITY_PLATE = infinity("infinity_plate").register();
-    public static final ItemEntry<Item> INFINITY_GEAR = infinity("infinity_gear").register();
 
     private static ItemBuilder<Item, Registrate> crystal(String name) {
         return REGISTRATE.item(name, p -> new Item(new Item.Properties().rarity(Rarity.RARE))).tab(ModGroups.MAIN);

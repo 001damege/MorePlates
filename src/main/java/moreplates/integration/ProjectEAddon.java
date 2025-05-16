@@ -12,9 +12,7 @@ public class ProjectEAddon {
     private static final Registrate REGISTRATE = MorePlates.registrate();
 
     public static final ItemEntry<Item> DARK_MATTER_PLATE = item("dark_matter_plate").register();
-    public static final ItemEntry<Item> DARK_MATTER_GEAR = item("dark_matter_gear").register();
     public static final ItemEntry<Item> RED_MATTER_PLATE = item("red_matter_plate").register();
-    public static final ItemEntry<Item> RED_MATTER_GEAR = item("red_matter_plate").register();
 
     private static ItemBuilder<Item, Registrate> item(String name) {
         return REGISTRATE.item(name, p -> new Item(new Item.Properties())).tab(ModGroups.MAIN);

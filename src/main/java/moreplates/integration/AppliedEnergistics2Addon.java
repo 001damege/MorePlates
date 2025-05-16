@@ -12,15 +12,10 @@ public class AppliedEnergistics2Addon {
     private static final Registrate REGISTRATE = MorePlates.registrate();
 
     public static final ItemEntry<Item> CERTUS_PLATE = item("certus_quartz_plate").register();
-    public static final ItemEntry<Item> CERTUS_GEAR = item("certus_quartz_gear").register();
     public static final ItemEntry<Item> CHARGED_CERTUS_PLATE = item("charged_certus_quartz_plate").register();
-    public static final ItemEntry<Item> CHARGED_CERTUS_GEAR = item("charged_certus_quartz_gear").register();
     public static final ItemEntry<Item> SILICON_PLATE = item("silicon_plate").register();
-    public static final ItemEntry<Item> SILICON_GEAR = item("silicon_gear").register();
     public static final ItemEntry<Item> FLUIX_PLATE = item("fluix_crystal_plate").register();
-    public static final ItemEntry<Item> FLUIX_GEAR = item("fluix_crystal_gear").register();
     public static final ItemEntry<Item> SINGULARITY_PLATE = item("singularity_plate").register();
-    public static final ItemEntry<Item> SINGULARITY_GEAR = item("singularity_gear").register();
 
     private static ItemBuilder<Item, Registrate> item(String name) {
         return REGISTRATE.item(name, p -> new Item(new Item.Properties())).tab(ModGroups.MAIN);
