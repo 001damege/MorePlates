@@ -34,6 +34,9 @@ public class MorePlates {
         if (ModList.get().isLoaded(Addons.Mekanism.getModId())) {
             MekanismAddon.register();
         }
+        if (ModList.get().isLoaded(Addons.DE.getModId())) {
+            DraconicEvolutionAddon.register();
+        }
     }
 
     public static ResourceLocation rl(String path) {

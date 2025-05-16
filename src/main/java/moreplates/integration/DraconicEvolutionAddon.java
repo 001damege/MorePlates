@@ -11,10 +11,9 @@ import net.minecraft.world.item.Item;
 public class DraconicEvolutionAddon {
     private static final Registrate REGISTRATE = MorePlates.registrate();
 
-    public static final ItemEntry<Item> AWAKENED_DRACONIUM_PLATE = item("awakened_draconic_plate").register();
-    public static final ItemEntry<Item> AWAKENED_DRACONIC_GEAR = item("awakened_draconic_gear").register();
     public static final ItemEntry<Item> DRACONIUM_PLATE = item("draconium_plate").register();
-    public static final ItemEntry<Item> DRACONIUM_GEAR = item("draconium_gear").register();
+    public static final ItemEntry<Item> AWAKENED_DRACONIUM_PLATE = item("awakened_draconium_plate").register();
+    public static final ItemEntry<Item> CHAOS_PLATE = item("chaos_shard_plate").register();
 
     private static ItemBuilder<Item, Registrate> item(String name) {
         return REGISTRATE.item(name, p -> new Item(new Item.Properties())).tab(ModGroups.MAIN);

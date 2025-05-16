@@ -92,6 +92,10 @@ dependencies {
 
     implementation fg.deobf("curse.maven:mekanism-268560:6258796") // Mekanism 10.4.15.75
     implementation fg.deobf("curse.maven:mekanism-generators-268566:6258799") // MekanismGeneraotors 10.4.15.75
+
+    implementation fg.deobf("curse.maven:draconic-evolution-223565:6065044") // Draconic Evolution 3.1.2.604
+    implementation fg.deobf("curse.maven:brandons-core-231382:5422013") // Brandons-Core 3.2.1.302
+    implementation fg.deobf("curse.maven:codechicken-lib-1-8-242818:5753868") // CodeChickenLib 4.4.0.516
 }
 
 jarJar.enable()
